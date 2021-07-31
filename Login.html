@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamersHub Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Create Account</h1><br>
+        <p>Enter your info</p><hr>
+            <form action="">
+                <div class="endgame">
+                    <label for="fname">
+                       <input type="text" placeholder="First Name" class="names" id="fname">
+                    </label>
+                    <label>
+                       <input type="text" placeholder="Last Name" class="names">
+                    </label>
+                </div>
+                    <label class="username">
+                        <input type="text" placeholder="Username" class="normal">
+                    </label>
+                    <label class="email">
+                       <input type="email" placeholder="E-mail" class="normal">
+                    </label>
+                    <label class="password">
+                       <input type="password" placeholder="Password"class="normal" id="password">
+                       <i class="fa fa-eye" id="eye1" onmousedown="showPassword()" onmouseup="hidePassword()"></i>
+                   
+                    </label>
+                    <label class="confirm">
+                       <input type="password" placeholder="Confirm Password"class="normal" id="password2">
+                       <i class="fa fa-eye" id="eye2" onmousedown="showPassword2()" onmouseup="hidePassword2()"></i>
+                    </label>
+                    <input type="submit" value="Sign Up" type="submit" onclick="confirm()" class="submit">
+            </form>
+        
+    </div>
+        
+    <script src="login.js"></script>
+</body>
+</html>
